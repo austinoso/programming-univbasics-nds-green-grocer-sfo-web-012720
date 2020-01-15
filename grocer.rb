@@ -141,5 +141,9 @@ def checkout(cart, coupons)
     i += 1
   end
 
-total
+ if total > 100
+
+   return total * 0.9.round(2)
+
+ end
 end
