@@ -95,14 +95,14 @@ def apply_clearance(cart)
 
   pp cart
 
-  # clearance_cart = []
-  # i = 0
-  #
-  # while i < cart.length do
-  #
-  #   if !cart[i]
-  #
-  # end
+  clearance_cart = []
+  i = 0
+  
+  while i < cart.length do
+  
+    if !cart[i]
+  
+  end
 
 end
 
