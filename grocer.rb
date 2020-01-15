@@ -72,6 +72,8 @@ def apply_coupons(cart, coupons)
 
       end
 
+      applied_coupons << cart[cart_i]
+
     else
 
       applied_coupons << cart[:cart_i]
