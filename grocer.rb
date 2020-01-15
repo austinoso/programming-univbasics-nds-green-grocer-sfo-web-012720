@@ -52,6 +52,10 @@ def apply_coupons(cart, coupons)
   applied_coupons = []
   i = 0
 
+  while i < coupons.length do
+    
+  end
+
 
   hash = find_item_by_name_in_collection(coupons[i][:item], cart)
 
