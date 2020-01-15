@@ -70,7 +70,7 @@ def apply_coupons(cart, coupons)
        apply_coupons << {
 
          :item => cart[cart_index][:item],
-         :price => coupons[coupons_index][:cost] / coupons[coupons_index][:num],
+         :price => coupons[coupons_index][:cost] / coupon_num,
          :clearance => cart[cart_index][:clearance],
          :count => coupon_num
 
