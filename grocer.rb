@@ -104,12 +104,12 @@ def apply_clearance(cart)
 
     else
 
-      puts new_price = cart[i][:price] * 0.8.round(2)
+      puts new_price = cart[i][:price] * 0.8
 
       clearance_cart << {
 
         :item => cart[i][:item],
-        :price => new_price,
+        :price => new_price.round(2),
         :clearance => cart[i][:clearance],
         :count => cart[i][:count]
 
