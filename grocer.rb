@@ -58,6 +58,15 @@ def apply_coupons(cart, coupons)
 
     if current_hash && current_hash[:count] >= coupons[i][:num]
 
+      apply_coupons << {
+
+      :item => "#{hash[:item]} W/COUPON",
+      :price => coupons[i][:cost] / coupons[i][:num],
+      :clearance => hash[:clearance],
+      :count => coupons[i][:num]
+
+      }    
+
     end
 
   end
