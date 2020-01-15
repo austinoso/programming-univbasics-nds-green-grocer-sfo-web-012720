@@ -89,7 +89,7 @@ def apply_coupons(cart, coupons)
 
   end
 
-applied_coupons
+return applied_coupons
 
 end
 
