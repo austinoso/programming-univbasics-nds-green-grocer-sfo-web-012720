@@ -71,9 +71,9 @@ def apply_coupons(cart, coupons)
 
          :item => cart[cart_index][:item]
          :price => coupons[coupons_index][:cost] / coupons[coupons_index][:num]
-         
+
        }
-       
+
      end
 
    end
