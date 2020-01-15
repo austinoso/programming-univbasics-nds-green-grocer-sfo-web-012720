@@ -56,6 +56,8 @@ def apply_coupons(cart, coupons)
 
     if !find_item_by_name_in_collection(cart[i], coupons)
 
+      applied_coupons << cart[i]
+
   end
 
 
