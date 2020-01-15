@@ -56,19 +56,25 @@ def apply_coupons(cart, coupons)
 
     hash = find_item_by_name_in_collection(coupons[i][:item], cart)
 
-    if hash[:count] >= coupons[i][:num]
+    while condition do
 
-      applied_coupons << {
+      if hash[:count] >= coupons[i][:num]
 
-      :item => "#{hash[:item]} W/COUPON",
-      :price => coupons[i][:cost] / coupons[i][:num],
-      :clearance => hash[:clearance],
-      :count => coupons[i][:num]
+        applied_coupons << {
 
-      }
+        :item => "#{hash[:item]} W/COUPON",
+        :price => coupons[i][:cost] / coupons[i][:num],
+        :clearance => hash[:clearance],
+        :count => coupons[i][:num]
 
-      hash[:count] -= coupons[coupons_i][:num]
+        }
 
+        hash[:count] -= coupons[coupons_i][:num]
+
+      end
+      
+    end
+      
     end
 
   end
