@@ -83,8 +83,9 @@ def apply_coupons(cart, coupons)
 
     end
 
-  end
+    i += 1
 
+  end
 
   applied_coupons
 
