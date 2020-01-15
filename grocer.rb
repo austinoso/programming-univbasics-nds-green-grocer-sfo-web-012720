@@ -74,7 +74,7 @@ def apply_coupons(cart, coupons)
 
       applied_coupons << cart[cart_i]
       coupons_i += 1
-      cart_i + 1
+      cart_i += 1
 
     else
 
