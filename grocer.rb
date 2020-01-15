@@ -102,6 +102,8 @@ def apply_clearance(cart)
 
     if !cart[i][:clearance]
 
+      clearance_cart << cart[i]
+
   end
 
 end
