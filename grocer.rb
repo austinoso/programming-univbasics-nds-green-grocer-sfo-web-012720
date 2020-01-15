@@ -104,7 +104,14 @@ def apply_clearance(cart)
 
     else
 
-      clearance_cart << cart[i][:price] * 0.8
+      clearance_cart << {
+        
+        :item => cart[i][:item],
+        :price => coupon[:cost] / coupon[:num],
+        :clearance => cart[i][:clearance],
+        :count => coupon[:num]
+        
+      }
 
     end
 
