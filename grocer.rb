@@ -72,9 +72,9 @@ def apply_coupons(cart, coupons)
         hash[:count] -= coupons[coupons_i][:num]
 
       end
-      
+
     end
-      
+
     end
 
   end
