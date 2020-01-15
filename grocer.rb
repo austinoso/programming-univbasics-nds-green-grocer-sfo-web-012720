@@ -52,7 +52,11 @@ def apply_coupons(cart, coupons)
   applied_coupons = []
   i = 0
 
-  find_item_by_name_in_collection(coupons[i][:name], applied_coupons)
+  while i < coupons.length do
+
+    find_item_by_name_in_collection(coupons[i],cart)
+
+  end
 
 
   applied_coupons
