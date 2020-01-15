@@ -73,7 +73,7 @@ def apply_coupons(cart, coupons)
 
       end
 
-      applied_coupons << hash
+      applied_coupons << current_hash
 
     end
 
