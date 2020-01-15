@@ -55,7 +55,7 @@ def apply_coupons(cart, coupons)
 
   while cart_i < cart.length do
 
-    if
+    if cart[cart_i][:item] == coupons[coupons_i]
 
   end
 
