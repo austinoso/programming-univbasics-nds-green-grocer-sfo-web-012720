@@ -54,34 +54,7 @@ def apply_coupons(cart, coupons)
 
   while i < cart.length do
 
-    current_hash = find_item_by_name_in_collection(cart[i], coupons)
-
-    if current_hash
-
-      while cart[:count] >= current_hash[:num] do
-
-        applied_coupons << {
-
-        :item => "#{cart[i][:item]} W/COUPON",
-        :price => hash[:cost] / hash[:num],
-        :clearance => cart[i][:clearance],
-        :count => hash[:num]
-
-        }
-
-        current_hash[:count] - coupons[i][:num]
-
-      end
-
-      applied_coupons << current_hash
-
-    else
-
-
-
-    end
-
-    i += 1
+    find_item_by_name_in_collection(cart[i], coupons)
 
   end
 
