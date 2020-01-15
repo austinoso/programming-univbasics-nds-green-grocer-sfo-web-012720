@@ -57,6 +57,12 @@ def apply_coupons(cart, coupons)
 
     if cart[cart_i][:item] == coupons[coupons_i]
 
+    else
+
+      applied_coupons << cart[:cart_i]
+
+    end
+
   end
 
 
