@@ -93,6 +93,8 @@ end
 
 def apply_clearance(cart)
 
+  pp cart
+
   # clearance_cart = []
   # i = 0
   #
