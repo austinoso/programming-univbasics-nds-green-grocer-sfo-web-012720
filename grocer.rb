@@ -134,6 +134,6 @@ def checkout(cart, coupons)
   total = 0
   i = 0
 
-  while i 
+  while i
 
 end
