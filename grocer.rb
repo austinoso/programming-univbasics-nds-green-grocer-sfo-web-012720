@@ -54,7 +54,7 @@ def apply_coupons(cart, coupons)
 
   while i < cart.length do
 
-    coupon = find_item_by_name_in_collection(cart[i], coupons)
+    coupon = find_item_by_name_in_collection(cart[i][:item], coupons)
 
     if !coupon
 
