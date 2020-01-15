@@ -97,11 +97,11 @@ def apply_clearance(cart)
 
   clearance_cart = []
   i = 0
-  
+
   while i < cart.length do
-  
+
     if !cart[i]
-  
+
   end
 
 end
