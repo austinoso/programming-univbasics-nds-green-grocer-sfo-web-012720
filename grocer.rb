@@ -129,7 +129,7 @@ def checkout(cart, coupons)
 
   applied_coupons = apply_coupons(consolidated_cart, coupons)
 
-  clearanced_cart = apply_clearance(cart)
+  clearanced_cart = apply_clearance(applied_coupons)
 
   total = 0
   i = 0
