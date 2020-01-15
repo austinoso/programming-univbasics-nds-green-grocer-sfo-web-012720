@@ -79,6 +79,8 @@ def apply_coupons(cart, coupons)
 
       end
 
+      applied_coupons << current_item
+
     end
 
   end
