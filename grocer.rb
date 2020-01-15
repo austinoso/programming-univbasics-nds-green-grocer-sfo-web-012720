@@ -107,7 +107,7 @@ def apply_clearance(cart)
       clearance_cart << {
 
         :item => cart[i][:item],
-        :price => cart[i][:price] * 0.8,
+        :price => cart[i][:price] * 0.8.round(2),
         :clearance => cart[i][:clearance],
         :count => cart[i][:count]
 
