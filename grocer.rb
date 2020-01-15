@@ -50,6 +50,9 @@ end
 def apply_coupons(cart, coupons)
 
   applied_coupons = []
+  i = 0
+
+  if find_item_by_name_in_collection(cart[], collection)
 
 
 end
