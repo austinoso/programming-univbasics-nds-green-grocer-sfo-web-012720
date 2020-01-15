@@ -53,9 +53,9 @@ def apply_coupons(cart, coupons)
   cart_i = 0
   coupons_i = 0
 
-  i = find_item_by_name_in_collection(coupons[coupons_i][:item], cart)
+  hash = find_item_by_name_in_collection(coupons[coupons_i][:item], cart)
 
-  if  &&
+  if hash[:count] >= coupons[coupons_i][:item]
 
 
 
