@@ -131,4 +131,6 @@ def checkout(cart, coupons)
 
   clearanced_cart = apply_clearance(cart)
 
+  pp clearanced_cart
+
 end
