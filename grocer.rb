@@ -57,7 +57,7 @@ def apply_coupons(cart, coupons)
 
   if hash[:count] >= coupons[coupons_i][:num]
 
-    apply_coupons << {
+    applied_coupons << {
 
     :item => "#{cart[cart_i][:item]} W/COUPON",
     :price => coupons[coupons_i][:cost] / coupons[coupons_i][:num],
@@ -65,6 +65,8 @@ def apply_coupons(cart, coupons)
     :count => coupons[coupons_i][:num]
 
     }
+
+    cart
 
   end
 
