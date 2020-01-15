@@ -50,6 +50,7 @@ end
 def apply_coupons(cart, coupons)
 
  applied_coupons = []
+ cart_index = 0
 
 end
 
