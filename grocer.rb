@@ -136,7 +136,7 @@ def checkout(cart, coupons)
 
   while i < clearanced_cart.length do
 
-    total += clearanced_cart[i][]
+    total += clearanced_cart[i][:price] * clearanced_cart[i][:count]
 
     i += 1
   end
