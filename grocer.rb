@@ -100,7 +100,7 @@ def apply_clearance(cart)
 
   while i < cart.length do
 
-    if !cart[i]
+    if !cart[i][:clearance]
 
   end
 
