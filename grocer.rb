@@ -32,7 +32,7 @@ def consolidate_cart(cart)
 
         if new_cart_i == find_item_by_name_in_collection(cart[i][:item], cart)
 
-          new_cart[i][:count] += 1
+          new_cart[new_cart_i][:count] += 1
 
         end
         new_cart_i += 1
