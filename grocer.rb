@@ -138,6 +138,7 @@ def checkout(cart, coupons)
 
     total += clearanced_cart[i][:price]
 
+    i += 1
   end
 
 total
