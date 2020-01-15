@@ -104,6 +104,12 @@ def apply_clearance(cart)
 
       clearance_cart << cart[i]
 
+    else
+
+      clearance_cart << cart[i][:price] * .2
+      
+    end
+
   end
 
 end
