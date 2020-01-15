@@ -49,8 +49,7 @@ end
 
 def apply_coupons(cart, coupons)
 
-  pp cart
-  pp coupons
+ applied_coupons = []
 
 end
 
