@@ -56,6 +56,10 @@ def apply_coupons(cart, coupons)
 
     current_hash = find_item_by_name_in_collection(coupons[i], cart)
 
+    if current_hash && current_hash[:count] >= coupons[i][:num]
+      
+    end  
+
   end
 
 
