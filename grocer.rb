@@ -104,7 +104,8 @@ def apply_clearance(cart)
 
     else
 
-      price = cart[i][:price] * .8
+      price = cart[i][:price]
+      puts price * .8
 
     end
 
