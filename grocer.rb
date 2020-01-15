@@ -53,36 +53,42 @@ def apply_coupons(cart, coupons)
   cart_i = 0
   coupons_i = 0
 
-  while cart_i < cart.length do
+  while coupons_i < coupons.length do
 
-    if cart[cart_i][:item] == coupons[coupons_i]
+    while cart_i < cart.length do
 
-      while cart[cart_i][:count] >= coupons[coupons_i][:num] do
+      if cart[cart_i][:item] == coupons[coupons_i]
 
-        apply_coupons << {
+        while cart[cart_i][:count] >= coupons[coupons_i][:num] do
 
-        :item => "#{cart[cart_i][:item]} W/COUPON",
-        :price => coupons[coupons_i][:cost] / coupons[coupons_i][:num],
-        :clearance => cart[cart_i][:clearance],
-        :count => coupons[coupons_i][:num]
+          apply_coupons << {
 
-        }
+          :item => "#{cart[cart_i][:item]} W/COUPON",
+          :price => coupons[coupons_i][:cost] / coupons[coupons_i][:num],
+          :clearance => cart[cart_i][:clearance],
+          :count => coupons[coupons_i][:num]
 
-        cart[cart_i][:count] -= coupons[coupons_i][:num]
+          }
+
+          cart[cart_i][:count] -= coupons[coupons_i][:num]
+
+        end
+
+        applied_coupons << cart[cart_i]
+        coupons_i += 1
+        cart_i += 1
+
+      else
+
+        applied_coupons << cart[:cart_i]
 
       end
-
-      applied_coupons << cart[cart_i]
-      coupons_i += 1
-      cart_i += 1
-
-    else
-
-      applied_coupons << cart[:cart_i]
 
     end
 
   end
+
+
 
 
 end
