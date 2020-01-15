@@ -58,7 +58,7 @@ def apply_coupons(cart, coupons)
 
     if current_hash
 
-      while current_hash[:count] >= coupons[i][:num] do
+      while cart[:count] >= coupons[i][:num] do
 
         applied_coupons << {
 
