@@ -60,6 +60,8 @@ def apply_coupons(cart, coupons)
 
     else
 
+      current_item = cart[i]
+
       while
 
     end
