@@ -119,7 +119,7 @@ def apply_clearance(cart)
 
   end
 
-clearance_cart
+pp clearance_cart
 
 end
 
