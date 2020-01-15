@@ -51,6 +51,13 @@ def apply_coupons(cart, coupons)
 
  applied_coupons = []
  cart_index = 0
+ coupons_index = 0
+
+ while cart_index < cart.length do
+
+   if
+
+ end
 
 end
 
