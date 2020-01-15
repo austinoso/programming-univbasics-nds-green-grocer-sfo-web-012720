@@ -76,6 +76,8 @@ def apply_coupons(cart, coupons)
 
        }
 
+       item_amount -= coupons[coupons_index][:num]
+
      end
 
    end
