@@ -54,7 +54,7 @@ def apply_coupons(cart, coupons)
 
   while i < coupons.length do
 
-    find_item_by_name_in_collection(coupons[i], cart)
+    current_hash = find_item_by_name_in_collection(coupons[i], cart)
 
   end
 
