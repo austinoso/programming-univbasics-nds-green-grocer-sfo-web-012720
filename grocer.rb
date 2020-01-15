@@ -63,7 +63,7 @@ def apply_coupons(cart, coupons)
 
    if cart_item == coupon_item && cart_count >= coupon_num
 
-     item_amount = cart_count
+     item_amount =
 
      while item_amount >= coupon_num do
 
@@ -76,7 +76,7 @@ def apply_coupons(cart, coupons)
 
        }
 
-       item_amount -= coupon_num
+       cart_count -= coupon_num
 
      end
 
