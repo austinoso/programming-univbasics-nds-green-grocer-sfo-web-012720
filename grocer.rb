@@ -52,7 +52,7 @@ def apply_coupons(cart, coupons)
 applied_coupons = []
 i = 0
 
-  find_item_by_name_in_collection(coupons[], collection)
+  find_item_by_name_in_collection(coupons[], applied_coupons)
 
 
 applied_coupons
